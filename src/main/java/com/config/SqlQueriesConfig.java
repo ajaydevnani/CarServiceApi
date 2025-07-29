@@ -11,5 +11,5 @@ import org.springframework.context.annotation.PropertySource;
 public class SqlQueriesConfig {
 
     @Value("${getCarInfo}")
-    public String getCarInfo;
+    private String carInfo;
 }
