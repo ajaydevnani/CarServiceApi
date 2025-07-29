@@ -1,23 +1,42 @@
-# Gradle
+### Gradle ###
 .gradle/
 build/
 !gradle/wrapper/gradle-wrapper.jar
 !**/src/main/**/build/
 
-# Local IDE settings
+### IntelliJ IDEA ###
 .idea/
+*.iws
 *.iml
 *.ipr
-*.iws
 out/
 
-# Mac/Linux system files
-.DS_Store
-*.swp
 
-# Logs
+### Logs ###
 *.log
+logs/
+*.tmp
 
-# Project-specific
+### OS-specific ###
+.DS_Store       # macOS Finder files
+Thumbs.db       # Windows Explorer thumbnails
+ehthumbs.db
+*.swp           # Vim swap files
+*~
+
+### Spring Boot ###
+# Local environment configs
+application-*.yml
+application-*.yaml
+application-*.properties
+!application.properties   # keep default properties
+
+### Java ###
+*.class
+*.jar
+*.war
+*.ear
+
+### Project-specific (optional) ###
 **/executionHistory.bin
 **/checksums.lock
