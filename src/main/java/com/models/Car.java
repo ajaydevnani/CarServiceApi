@@ -2,6 +2,7 @@ package com.models;
 
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.Table;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -12,7 +13,8 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @Builder
 @Entity
-public class car {
+@Table(name = "car")
+public class Car {
 
     private String make;
     private String model;
